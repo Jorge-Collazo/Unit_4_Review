@@ -5,8 +5,8 @@
    Tutorial 11
    Review Assignment
 
-   Author: 
-   Date:   
+   Author: Jorge Collazo
+   Date: 3-9-20  
 
    Global Variables
    ================
@@ -58,6 +58,21 @@
 
          
 /* ================================================================= */
+
+var allCells;
+window.onload = startUp();
+
+function startUp(){
+   document.getElementById("puzzleTitle").innerHTML = "Puzzle 1"
+   document.getElementById("puzzle").innerHTML = drawHitori(hitori1Numbers, hitori1Blocks, hitori1Rating)
+   var puzzleButtons = document.getElementsByClassName("puzzles")
+   for(var i = 0; i < puzzleButtons.length; i ++){
+      puzzleButtons[i].onclick = switchPuzzle();
+   }
+   setupPuzzle();
+   
+   document.addEventListener
+}
 
 function checkSolution() {
    /* Set the initial solved state of the puzzle to true */
